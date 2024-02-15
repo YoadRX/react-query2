@@ -10,7 +10,6 @@ export function AddTodo({ setTodos }: AddTodoProps) {
   const bodyRef = useRef<HTMLInputElement | null>(null);
 
   const handleAddTodo = async (e: React.FormEvent<HTMLFormElement>) => {
-    debugger;
     e.preventDefault();
     try {
       const newTodo = bodyRef.current!.value;
